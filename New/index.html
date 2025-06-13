@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PokeHub - Explore Pokémon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <div class="Page">
+
+    <header class="header">
+      <img src="Images/Pokemon.jpg" alt="Pokéball Logo" class="logo" />
+      <h1>PokeHub</h1>
+    </header>
+
+    <nav class="buttons">
+      <button class="active" data-page="index.html">Main</button>
+      <button data-page="Info.html">Info</button>
+      <div class="search">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search Pokémon..."
+          aria-label="Search Pokémon"
+          autocomplete="off"
+        />
+      </div>
+    </nav>
+
+    <main class="body">
+      <section class="pokemon-scroll-frame" aria-live="polite" aria-label="List of Pokémon"></section>
+    </main>
+
+    <footer class="footer">
+      <p>© Copyright owned by {owner}</p>
+    </footer>
+
+  </div>
+  <script src="JS/script.js" defer></script>
+</body>
+</html>
